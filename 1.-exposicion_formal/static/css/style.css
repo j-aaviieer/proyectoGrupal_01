@@ -4,21 +4,121 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background-color: #001936;
+}
 /*Encabezado-----------------------------*/
 .navbar{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #001936;
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 0 10px #001936;
     width: 100%;
-    height: 25%; 
+    height: 15%; 
     z-index: 10;
     padding: 15px;
+    border-bottom: solid 0.1px rgb(255, 255, 255, 0.1);
+}
+.logo {
+    height: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 150px;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 
-.titulo-navbar{
+.botones-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+}
 
+.botones-navbar a {
+    text-decoration: none;
+    color : #C19328;
+}
+
+.iconos-derecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra-anuncio {
+    background-color: #00FF00; /* Verde brillante exacto */
+    color: #000000; /* Texto negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las flechas y el texto */
+    padding: 10px 0; /* Grosor de la barra */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.flecha {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size:2.5rem;
+    font-weight: 900;
+    background: transparent;
+        cursor: pointer;
+    color: #C19328;
+    border: 0;
+    transition: transform 0.3s ease; 
+}
+
+
+.cesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size:2.5rem;
+    font-weight: 900;
+    background: transparent;
+        cursor: pointer;
+    color: #C19328;
+    border: 0;
+    transition: transform 0.3s ease; 
+}
+
+.fin{
+    color: aliceblue;
+    height: 100px;
+    width: 100%;
+    background-color: #001936;
+    border-bottom: solid 0.1px rgb(255, 255, 255, 0.1);
+    position: fixed;
+    top: 1;
+    left: 0
+    z-in;
 }

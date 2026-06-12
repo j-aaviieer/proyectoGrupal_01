@@ -2,99 +2,203 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCocos</title>
-    <!-- Asegúrate de que esta ruta sea la correcta en tu proyecto -->
-    <link rel="stylesheet" href="static/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCocos</title>
+  <!-- Asegúrate de que esta ruta sea la correcta en tu proyecto -->
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
-    <!-- 1. Barra de Anuncios Superior -->
-    <div class="barra-anuncio">
-        <button class="flecha">←</button>
-        <p class="texto-anuncio">Garantía de 1 año incluida ✅</p>
-        <button class="flecha">→</button>
+  <!-- 1. Barra de Anuncios Superior -->
+  <div class="barra-anuncio">
+    <button class="flecha">←</button>
+    <p class="texto-anuncio">Garantía de 1 año incluida ✅</p>
+    <button class="flecha">→</button>
+  </div>
+
+  <!-- 2. Menú de Navegación Principal -->
+  <header class="navbar">
+    <div class="logo-navbar">
+      <a href="pages/Tienda.html">
+        <img src="static/images/Logo_MyCOCOS_Color_original (1).webp" alt="MyCocos" class="logo">
+      </a>
     </div>
 
-    <!-- 2. Menú de Navegación Principal -->
-    <header class="navbar">
-        <div class="logo-navbar">
-            <a href="index.html">
-            <img src="static/images/Logo_MyCOCOS_Color_original (1).webp" alt="MyCocos" class="logo">
-            </a>
+    <nav class="botones-navbar">
+      <a href="index.html">TIENDA</a>
+      <a href="pages/mas_vendidos.html">MÁS VENDIDOS 🔥</a>
+      <a href="pages/PacksYKits.html">PACKS Y KITS 📦</a>
+      <a href="pages/jabones.html">JABONES 🧼</a>
+      <a href="pages/club.html">MyCOCOS® CLUB 😎</a>
+    </nav>
+
+    <div class="iconos-derecha">
+      <button class="buscar">⌕</button>
+      <div class="contenedor-cesta">
+        <button class="cesta">🛒</button>
+        <span class="contador-carrito">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="contenido">
+    <section class="section1">
+      <div>
+        <div class="contenido-section">
+          <h1 class="titulo-section1">LAS NUEVAS HERRAMIENTAS DE PAPÁ</h1>
+          <h1 class="descuento-section1">HASTA 45% OFF</h1>
+          <a href="pages/mas_vendidos.html class=" comprar-ahora">COMPRAR AHORA -></a>
         </div>
-
-        <nav class="botones-navbar">
-            <a href="pages/Tienda.html">TIENDA</a>
-            <a href="pages/mas_vendidos.html">MÁS VENDIDOS 🔥</a>
-            <a href="pages/PacksYKits.html">PACKS Y KITS 📦</a>
-            <a href="pages/jabones.html">JABONES 🧼</a>
-            <a href="pages/club.html">MyCOCOS® CLUB 😎</a>
-        </nav>
-
-        <div class="iconos-derecha">
-            <button class="buscar">⌕</button>
-            <div class="contenedor-cesta">
-                <button class="cesta">🛒</button>
-                <span class="contador-carrito">0</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- Contenido Principal -->
-    <main class="contenido">
-        <section class="section1">
+      </div>
+      <section class="tarjetas-evento">
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
             <div>
-                <div class="contenido-section">
-                    <h1 class="titulo-section1">LAS NUEVAS HERRAMIENTAS DE PAPÁ</h1>
-                    <h1 class="descuento-section1">HASTA 45% OFF</h1>
-                    <a href="#" class="comprar-ahora">COMPRAR AHORA -></a>
-                </div>
+              <img src="https://mycocos.cl/cdn/shop/files/amarillo-3_grande.jpg?v=1767623329" alt="fondo-evento"
+                class="fondo-evento" />
             </div>
-        </section>
-    </main>
-    <footer class="fin">
-        <div class="txt">
-            <h3>
-                MyCOCOS® CLUB
-            </h3>
-            <p>
-                Hoy más de 500.000 ya están usando MyCOCOS® en Chile
-                CONTACTANOS: Vía DM de Instagram
-                theclub@mycocos.cl
-                De lunes a viernes de 9hrs a 18hrs
-                Sábados de 10hrs a 13hrs
-            </p>
+            <div class="texto-evento">
+              <h2 class="event-title">Rasuradora MyCOCOS® 4.0</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b></p>
+              <p class="event-location">
+                <img src="../static/images/Rasuradora_mycocos_4.0_4b5ea0c1-819c-45b5-bed7-19ca6f225b8e_500x.webp"
+                  alt="Chile" class="chile" />
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
+            </div>
+          </div>
         </div>
-        <div class="txt">
-            <h3>
-                LINKS
-            </h3>
-            <p>
-                The Club Comunidad
-                Prensa
-                Políticas de privacidad
-                Terminos y condiciones
-                Política de envíos
-                Cambios Y Devoluciones
-                Política de reembolso
-                Trabaja Con Nosotros
-                Información de Contacto
-                Garantías
-                Mantenimiento de rasuradora eléctrica
-                Rastrea tu pedido</p>
-            <div class="txt">
-                <h3>
-                    Suscríbete a las OFERTAS VIP
-
-                </h3>
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
+            <div>
+              <img src="https://mycocos.cl/cdn/shop/files/azul-3.jpg?v=1767623411" alt="fondo-evento-2"
+                class="fondo-evento-2" />
             </div>
-            <div class="txt">
-
+            <div class="texto-evento">
+              <h2 class="event-title">Pack rasuradora MyCOCOS®</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b>6</p>
+              <p class="event-location">
+                <img
+                  src="https://mycocos.cl/cdn/shop/files/pack-rasuradora-mycocos_de4a36e4-f24d-4980-ada1-d41703738778_1080x.jpg?v=1766312777"
+                  alt="Chile" class="chile" />
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
             </div>
-    </footer>|
+          </div>
+        </div>
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
+            <div>
+              <img src="https://mycocos.cl/cdn/shop/files/verde-3_1080x.jpg?v=1767623361" alt="fondo-evento-3"
+                class="fondo-evento-3" />
+            </div>
+            <div class="texto-evento">
+              <h2 class="event-title">rasurador MyCOCOS® 2.0</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b></p>
+              <p class="event-location">
+                <img
+                  src="https://mycocos.cl/cdn/shop/files/afeitadora-daily-shaver-portatil-hombre-mycocos_1200x.jpg?v=1780342198"
+                  alt="Chile" class="chile" />
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tarjetas-evento">
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
+            <div>
+              <img src="static/images/Pack_rasuradora_mycocos_400x.webp" alt="fondo-evento" class="fondo-evento" />
+            </div>
+            <div class="texto-evento">
+              <h2 class="event-title">Rasuradora MyCOCOS® 4.0</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b></p>
+              <p class="event-location">
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
+            </div>
+          </div>
+        </div>
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
+            <div>
+              <img src="static/images/Kit_perfect_trio_400x.webp" alt="fondo-evento-2" class="fondo-evento-2" />
+            </div>
+            <div class="texto-evento">
+              <h2 class="event-title">Pack rasuradora MyCOCOS®</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b>6</p>
+              <p class="event-location">
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
+            </div>
+          </div>
+        </div>
+        <div class="tarjeta-evento">
+          <div class="contenido-evento">
+            <div>
+              <img src="static/images/pack-rasuradora-mycocos1_c71431b5-f476-4993-9e24-e863d25f7f76_400x.webp"
+                alt="fondo-evento-3" class="fondo-evento-3" />
+            </div>
+            <div class="texto-evento">
+              <h2 class="event-title">rasurador MyCOCOS® 2.0</h2>
+              <p class="event-date">⭐⭐⭐⭐⭐850 <b>. reseñas</b></p>
+              <p class="event-location">
+                Santiago, Chile, Chile
+              </p>
+              <p class="tipo-evento">$6.990</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer class="fin">
+    <div class="txt">
+      <h3>
+        MyCOCOS® CLUB
+      </h3>
+      <p>
+        Hoy más de 500.000 ya están usando MyCOCOS® en Chile
+        CONTACTANOS: Vía DM de Instagram
+        theclub@mycocos.cl
+        De lunes a viernes de 9hrs a 18hrs
+        Sábados de 10hrs a 13hrs
+      </p>
+    </div>
+    <div class="txt">
+      <h3>
+        LINKS
+      </h3>
+      <p>
+        The Club Comunidad
+        Prensa
+        Políticas de privacidad
+        Terminos y condiciones
+        Política de envíos
+        Cambios Y Devoluciones
+        Política de reembolso
+        Trabaja Con Nosotros
+        Información de Contacto
+        Garantías
+        Mantenimiento de rasuradora eléctrica
+        Rastrea tu pedido</p>
+      <div class="txt">
+        <h3>
+          Suscríbete a las OFERTAS VIP
+        </h3>
+      </div>
+      <div class="txt">
+
+      </div>
+  </footer>|
 
 </body>
 

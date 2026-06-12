@@ -11,6 +11,11 @@ body {
   background-color: #001936;
 }
 
+.claseUwU{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* 1. Barra de Anuncio Superior */
 .barra-anuncio {
   background-color: #C9A84C;
@@ -37,6 +42,7 @@ body {
 
 /* 2. Menú de Navegación Principal */
 .navbar {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,7 +50,7 @@ body {
   background-color: #001935;
   /* Azul marino oscuro de la imagen */
   padding: 10px 50px;
-  height: 70px;
+  
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -60,6 +66,7 @@ body {
 
 /* Botones de Navegación */
 .botones-navbar {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -140,15 +147,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.section1 div {
-}
 
 .bg {
   width: 100%;
   background-size: cover; /* Centra la imagen en el espacio disponible */
   background-position: center; /* Evita que la imagen se duplique si el contenedor es muy grande */
   z-index: -1;
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+  
 }
 
 .contenido-section {
@@ -178,8 +183,7 @@ body {
   margin-top: 27px;
 }
 
-.titulo-section1 {
-}
+
 
 .descuento-section1 {
   position: relative;
@@ -189,15 +193,22 @@ body {
 }
 
 .fin {
+  display: flex;
+  flex-direction: row;
   color: white;
   border-top: solid 1px rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
+  padding: 20px;
 }
 
 .txt {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  gap: 10px;
+  font-size: 0.7rem;
 }
 
 .section-events {
@@ -233,6 +244,15 @@ body {
   padding: 20px;
 }
 
+.txt a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.txt a:hover {
+  transform: scale(1.03);
+  color: rgb(172, 172, 172);
+}
 .title-events {
   font-size: 2.5rem;
   font-weight: bold;
@@ -311,8 +331,6 @@ body {
 }
 
 .texto-evento {
-  
-  display: flex;
   flex-direction: column;
   padding-left: 12px;
   gap: 12px;
@@ -322,29 +340,18 @@ body {
   font-size: 1.4rem;
   font-weight: 800;
   font-weight: bold;
+  text-align: center;
 }
 
 .event-date {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  text-align: center;
   gap: 9px;
   font-size: 0.9rem;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.562);
 }
 
-.event-location {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 0.9rem;
-  font-weight: 700;
-  gap: 9px;
-  color: rgba(0, 0, 0, 0.404);
-}
 
 .calendario {
   width: 18px;
@@ -362,12 +369,10 @@ body {
 }
 
 .tipo-evento {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  text-align: center;
   margin-top: 40px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.562);
 }
@@ -450,9 +455,7 @@ body {
   font-size: 100px;
   
 }
-.contenedor-clubb{
-  
-}
+
 .contenido-club img{
   width: 240px;
   height: 150px;
@@ -475,8 +478,8 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-.fondoctm
-{
+.fondoctm{
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -488,13 +491,10 @@ body {
     url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/BANNERCOLECCION2a.jpg?v=1780942361");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-}/* mati q carajeanos*/
-
-.fondoctm2
-{
+  background-repeat: none
+  
+}
+.fondoctm2{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -502,8 +502,8 @@ body {
   width: 100%;
   height: 65vh;
   background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/bannerdiadelpadre.jpg?v=1780933241");
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
+  url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/bannerdiadelpadre.jpg?v=1780933241");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -512,6 +512,8 @@ body {
 }
 
 .tarjetas{
+  gap: 20px;
+  text-decoration: none;
   margin-top:20px;
   margin-bottom: 20px;
   text-align: center;
@@ -519,20 +521,65 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: white;
   justify-content: space-around;
 }
 .tarjeta-club{
+  color: white;
   background-color: #05254b;
   width: 350px;
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #F2CE03 ;
+  transition: 0.3s;
+}
+
+.tarjeta-club:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 10px#000000;
+  background-color: #001936;
+  cursor: pointer;
 }
 .tarjeta-club p{
   margin-top: 20px;
 }
+
 .tarjeta-club h1{
+  text-decoration: none;
   margin-top: 14px;
 }
 
+.redes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+  width: 100px;
+}
+.tarjeta-redes {
+  gap: 0px;
+  height: 30px;
+  width: 30px;
+}
+.tarjeta-redes img{
+  height: 30px;
+  width: 30px;
+}
+  
+  .subscripcion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .texto-sub{
+   color: #A97C26;
+  }
+  .subtext-sub{
+    color: white;
+
+  }
+  .text-amarillo{
+    color: #FFC107;
+    text-shadow: 0px 2px 20px #F2CE03;
+  }

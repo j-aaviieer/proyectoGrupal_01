@@ -564,21 +564,3 @@ body {
   width: 30px;
 }
   
-  .subscripcion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-  .texto-sub{
-   color: #A97C26;
-  }
-  .subtext-sub{
-    color: white;
-
-  }
-  .text-amarillo{
-    color: #FFC107;
-    text-shadow: 0px 2px 20px #F2CE03;
-  }

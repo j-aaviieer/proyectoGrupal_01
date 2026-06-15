@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.flecha {
+.flecha { 
   background: none;
   border: none;
   color: #000000;
@@ -83,6 +83,8 @@ body {
 
 .botones-navbar a:hover {
   color: #ffffff;
+  text-decoration: underline;
+  text-shadow: 0px 2px 20px #FFD300;
 }
 
 /* Zona Derecha: Iconos */
@@ -131,7 +133,23 @@ body {
   align-items: center;
   border: 1px solid #001226;
 }
-
+.section1-history {
+  padding: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.section1-history h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.section1-history p {
+  font-size: 1.0rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.568);
+}
 /* Espaciado del contenido para que no se esconda para no confundirlos c*/
 .contenido {
   color: white;
@@ -139,11 +157,15 @@ body {
 }
 
 .section1 {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
   min-height: 500px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/BANNERCOLECCION2a.jpg?v=1780942361");
-  background-size: contain;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%),
+   url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/BANNERCOLECCION2a.jpg?v=1780942361");
+  background-size: cover;
   background-repeat: no-repeat;
+  
 }
 
 
@@ -152,7 +174,6 @@ body {
   background-size: cover; /* Centra la imagen en el espacio disponible */
   background-position: center; /* Evita que la imagen se duplique si el contenedor es muy grande */
   z-index: -1;
-  
 }
 
 .contenido-section {
@@ -214,17 +235,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
   width: 100%;
-  height: 65vh;
+  height: 64vh;
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url("https://scontent-scl3-1.xx.fbcdn.net/v/t39.30808-6/471833490_1121906923003049_7279258810984718058_n.jpg?stp=dst-jpg_tt6&cstp=mx1640x924&ctp=s1640x924&_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=En8PwlBfWJ0Q7kNvwHcln0G&_nc_oc=AdpLMFGsheHcnb1MpkbLy6KwG5Dpo6VyrIebAeAD3dhMPnTN6ym6I2RDQULyVwyVYbBAwo53kS2LgN-MLzD-Ets0&_nc_zt=23&_nc_ht=scontent-scl3-1.xx&_nc_gid=TYmCqLTVbP6wudopY2gmzA&_nc_ss=7b289&oh=00_Af9TesoAmTHbOQ5BYba0OFniEgGrgHqTW9-v-f3c_2Gkjw&oe=6A2E11CC");
+    url("https://getmycocos.com/cdn/shop/files/Bloque-rasuradora-nasal-GetMyCocos-2.webp?v=1759929588&width=3840");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  
 }
 
 .events-title {
@@ -424,8 +444,65 @@ body {
   background-color: rgba(0, 0, 0, 0.486);
   transform: translateY(-2px);
 }
-
+/*SECCION AURA-----------------------------------------*/
+.section-aura-azul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 140px;
+  background-color: rgb(1, 70, 113);
+  background: linear-gradient(to bottom, rgba(1, 70, 113, 0.3) 0%, rgba(1, 70, 113, 1) 100%);
+}
+.section-aura {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.aura-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: start;
+  gap: 5px;
+}
+.h1-aura {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.p-aura {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.808);
+}
+.p-aura-2 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.418);
+}
+.foto-aura {
+  width: 70px;
+  height: 70px;
+  border: solid 2px rgb(78, 111, 136);
+  border-radius: 10px;
+}
+.aura-button {
+  width: 130px;;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: rgb(246, 164, 41);
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 0.3s ease;
+}
+.aura-button:hover {
+  transform: scale(1.1);
+}
 /*CLUB-------------------------------------------*/
+
 
 .contenido-club{
   flex-direction: column;
@@ -441,18 +518,15 @@ body {
   
 }
 .titulo-club{
-  color: #c19328;
+  color: rgb(240, 168, 0);
 }
 
 .subtext-club{
   color: white;
-
-
 }
-.flecgmarillo{
+.texto-amarillo{
   color: #FFD300;
   font-size: 100px;
-  
 }
 
 .contenido-club img{
@@ -507,7 +581,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  
 }
 
 .tarjetas{
@@ -537,6 +611,7 @@ body {
   box-shadow: 2px 2px 10px#000000;
   background-color: #001936;
   cursor: pointer;
+  color: #FFD300;
 }
 .tarjeta-club p{
   margin-top: 20px;
@@ -558,9 +633,171 @@ body {
   gap: 0px;
   height: 30px;
   width: 30px;
+  border-radius: 20px;
 }
 .tarjeta-redes img{
   height: 30px;
   width: 30px;
 }
   
+.tarjetas-vendidos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-top: 500px;
+  margin-bottom: 50px;
+}
+
+.tarjeta-vendidos{
+  flex-direction: column;
+  padding: 20px;
+  background-color: #F6EFEF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tarjeta-vendidos:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 2px 20px #FFD300;;
+}
+
+.tarjeta-vendidos img{
+  width: 350px;
+}
+
+.tipo-vendidos{
+  text-align: center;
+}
+
+.tarjetas-tienda{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 130px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tarjeta-tienda{
+  
+  flex-direction: column;
+  padding: 20px;
+  background-color: #F6EFEF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tarjeta-tienda img{
+  width: 350px;
+}
+
+.tarjeta-tienda:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 2px 20px #FFD300;;
+}
+
+
+.contenido-tienda{
+gap: 50px;
+}
+
+.tarjetas-pack{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 130px;
+  margin-top: 530px;
+  margin-bottom: 50px;
+}
+.tarjeta-pack{
+  flex-direction: column;
+  padding: 20px;
+  background-color: #F6EFEF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+.tarjeta-pack:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 2px 20px #FFD300;;
+}
+.tarjeta-pack img{
+  width: 350px;
+}
+
+.tarjetas-jabones{
+   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 130px;
+  margin-top: 650px;
+  margin-bottom: 50px;
+  margin-right: 230px;
+}
+.tarjeta-jabones{
+    flex-direction: column;
+  padding: 20px;
+  background-color: #F6EFEF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+.tarjeta-jabones:hover{
+   transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 2px 20px #FFD300;;
+}
+
+
+
+
+.tarjeta-jabones img{
+  width: 350px;
+}
+
+.tarjeta-amarilla-aura {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(255, 207, 0);
+  height: 180px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(255, 207, 0);
+}
+.amarilla-arriba{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.amarilla-medio {
+  display: flex;
+  flex-direction: row;
+}
+.amarilla-abajo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

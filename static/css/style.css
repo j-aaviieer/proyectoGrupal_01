@@ -778,26 +778,162 @@ gap: 50px;
   width: 350px;
 }
 
+/*Suscribirse puta la wea larga por la ctm chupalo giancarlos*/
+.contenido-club {
+  background-color: #001e3d;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.texto-amarillo {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.contenedor-columnas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 .tarjeta-amarilla-aura {
   display: flex;
   flex-direction: column;
-  background-color:rgb(255, 207, 0);
+  justify-content: space-between;
+  background-color: #ffcf00;
   height: 180px;
   width: 300px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px rgb(255, 207, 0);
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px rgba(255, 207, 0, 0.6);
+  padding: 20px;
+  box-sizing: border-box;
+  color: #000;
+  transition: transform 0.4s ease, box-shadow 0.6s ease;
 }
-.amarilla-arriba{
+.tarjeta-amarilla-aura:hover {
+  transform: scale(1.1) translateY(-10px);
+   box-shadow: 0px 0px 35px rgba(141, 115, 0, 0.541);
+}
+
+.amarilla-arriba {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-.amarilla-medio {
-  display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 .amarilla-abajo {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nombre-aura-oziozi{
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.amarilla-medio h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 900;
+  text-align: left;
+}
+
+.descuento {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.tarjeta-formulario {
+  border: 2px solid #ffcf00;
+  border-radius: 15px;
+  width: 340px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background-color: #001e3d;
+}
+
+.tarjeta-formulario h3 {
+  color: #ffcf00;
+  margin-top: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.tarjeta-formulario .subtitulo-form {
+  color: #ffcf00;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 20px 0 5px 0;
+}
+
+.tarjeta-formulario .mini-texto {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.form-suscripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-suscripcion input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.form-suscripcion input::placeholder {
+  color: #a0a0a0;
+}
+
+.suscribirme {
+  background-color: #ffcf00;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.6s ease;
+}
+
+.suscribirme:hover {
+  background-color: #a78800;
+  transform: scale(1.03);
+}
+
+
+.publicidad-section {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0505/9982/1502/files/xdsadsd.jpg?v=1776779901);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 2px rgba(255, 255, 255, 0.384);
+}
+
+.contenedor-publicidad {
+  width: 100%;
+  height: 450px;
+}
+.mycocosclub{
+  margin-top: 10px;
+  color: #b9a26d;
+  text-shadow: 2px 2px 20px #C9A84C;
 }

@@ -239,7 +239,7 @@ body {
   height: 64vh;
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url("https://getmycocos.com/cdn/shop/files/Bloque-rasuradora-nasal-GetMyCocos-2.webp?v=1759929588&width=3840");
+    url("https://cdn.shopify.com/s/files/1/0505/9982/1502/files/BANNERCOLECCION1a.jpg?v=1780935641");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -646,7 +646,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   gap: 40px;
-  margin-top: 500px;
+  margin-top: 350px;
   margin-bottom: 50px;
 }
 
@@ -719,7 +719,7 @@ gap: 50px;
   flex-direction: row;
   justify-content: space-evenly;
   gap: 130px;
-  margin-top: 530px;
+  margin-top: 350px;
   margin-bottom: 50px;
 }
 .tarjeta-pack{
@@ -826,6 +826,9 @@ gap: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.amarilla-medio h1{
+  font-weight: 900;
 }
 .amarilla-abajo {
   display: flex;
